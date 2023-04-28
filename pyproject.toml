@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "smart-data-foundry"
+version = "0.1.0"
+description = "Data exercises"
+authors = ["Stephen Nicholson <stephen.nicholson1@hotmail.co.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "data_exercises"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pandas = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
