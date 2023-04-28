@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "smart-data-foundry"
+name = "data-exercises"
 version = "0.1.0"
 description = "Data exercises"
 authors = ["Stephen Nicholson <stephen.nicholson1@hotmail.co.uk>"]
