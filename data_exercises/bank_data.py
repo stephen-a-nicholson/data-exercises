@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 file_handler = logging.FileHandler("results.log")
 file_handler.setLevel(logging.DEBUG)
