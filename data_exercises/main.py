@@ -4,6 +4,7 @@ import pandas as pd
 from sqlalchemy import create_engine, text
 
 from data_exercises.bank_data import BankData
+from data_exercises.data_types import TransactionsMonthly
 
 
 def main() -> None:
@@ -27,6 +28,10 @@ def main() -> None:
 
     transactions: pd.DataFrame = bank_data.transaction_aggregations()
     transactions_monthly: pd.DataFrame = bank_data.transaction_aggregations_monthly()
+    trans_monthly: TransactionsMonthly = TransactionsMonthly(
+        transactions_monthly.to_dict("records")
+    )
+    print(type(trans_monthly))
 
     engine = create_engine("sqlite://", echo=False)
 

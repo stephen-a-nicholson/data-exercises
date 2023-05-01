@@ -4,11 +4,10 @@ import numpy as np
 import pandas as pd
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
-fh = logging.FileHandler("results.log")
-fh.setLevel(logging.DEBUG)
-logger.addHandler(fh)
+file_handler = logging.FileHandler("results.log")
+file_handler.setLevel(logging.DEBUG)
+logger.addHandler(file_handler)
 
 
 class BankData:
